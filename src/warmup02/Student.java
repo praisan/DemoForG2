@@ -7,11 +7,12 @@ class Student {
     private long id;
     private String name;
     private static int count;
+    private static long initId=6013500000L;
 
     public Student(String name) {
         this.name = name;
         count++;
-        id=count;
+        id=initId+count;
     }
 
     public long getId() {
